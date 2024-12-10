@@ -120,4 +120,4 @@ This file fully discusses in detail what an SOP (Statement of Purpose) is and an
 
 We've spent many a day researching and compiling the above information, as there is no point in rushing things up without properly knowing what an SOP is in the first place. We also believe this is what will form the backbone when judging & providing feedback on SOP's. Also, having this information is crucial to generate a custom score for every SOP.
 
-We plan to evaluate SOP's that user provides based on all the metrics listed in the file before generating a custom score. Refer the documentation & Analysis file to know more about the metrics/rubrics.
+We evaluate SOP's that user provides based on all the metrics listed in the file before generating a custom score. Refer the documentation & Analysis file to know more about the metrics/rubrics.
