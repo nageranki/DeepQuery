@@ -6,5 +6,5 @@ For detailed analysis & documentation, refer to the 'Documentation & Analysis' P
 
 Also, we’ve included all our initial work, research & hit-and-miss attempts in the 'Hit & Miss (Various Initial Attempts)' folder. As in progress that we initially made and then scrapped in pursuit of better results.
 
-Note: README_DeepQuery.txt is an extended and more detailed README file. We wrote it separately to provide in-depth information without overwhelming users with too much detail upon first accessing the repository.  
+Note: README_DeepQuery.txt is an extended and more detailed README file. We wrote it separately to provide in-depth information without overwhelming users with too much detail upon first accessing the repository.
  
