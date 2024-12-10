@@ -1,0 +1,8 @@
+Initially, we tried to build a classification model for our SOPs (the classifier to classify to which masters’ program the SOP belongs to), but didn’t see success despite a lot of effort, the code is there in the ‘Hit & Miss (Various initial attempts)’ folder on GitHub. Here is an explanation for the error:
+
+With this classification model we faced a performance limitation due to the skill overlap across academic disciplines. Especially, the presence of intersecting course skills creates the issue, compromising model performance. We trained our model with 1400 SOPs that we scrapped from web and synthetically generating few.
+
+Take for example, the programming skill of C++, which is prevalent across multiple academic disciplines such as Computer Science (CS) and Electronics and Computer Engineering (ECM). This skill commonality introduces classification complexity.
+So, our model incorrectly assigns multiple classifications to a single statement of purpose (SOP). This kind of classification lacks the requirement for downstream workflow.
+
+We could've tried to trim the dataset such that course skill that fall in same line are removed from the dataset, but it would create an issue in general classification of SOP because of insufficient data.
