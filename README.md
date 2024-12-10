@@ -4,6 +4,6 @@ For comprehensive instructions on setting up and running this project, as well a
 
 For detailed analysis & documentation, refer to the 'Documentation & Analysis' PDF file.
 
-Also, we’ve included all our initial work, research & hit-and-miss attempts in the 'Hit & Miss (Various initial attempts). As in progress that we initially made and then scrapped in pursuit of better results).
+Also, we’ve included all our initial work, research & hit-and-miss attempts in the 'Hit & Miss (Various Initial Attempts)' folder. As in progress that we initially made and then scrapped in pursuit of better results.
 
 Note: README_DeepQuery.txt is an extended and more detailed README file. We wrote it separately to provide in-depth information without overwhelming users with too much detail upon first accessing the repository.
