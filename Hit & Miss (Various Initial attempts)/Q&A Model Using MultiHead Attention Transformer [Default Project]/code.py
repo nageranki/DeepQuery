@@ -6,7 +6,7 @@ from torch.utils.data import Dataset, DataLoader, Subset
 import math
 import json
 import re
-from tqdm import tqdm  # For progress bars
+from tqdm import tqdm
 from sklearn.model_selection import train_test_split
 
 # ---------------------------
