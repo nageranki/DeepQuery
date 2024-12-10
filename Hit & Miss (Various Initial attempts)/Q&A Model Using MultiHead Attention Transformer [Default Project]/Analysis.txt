@@ -1,0 +1,50 @@
+We tried working on the Default Project mentioned in the project guidelines pdf on OneDrive. We attempted building a ‘Question & Answer Model using Multi-Head Attention Transformer’ using the SQuAD 2.0 dataset. We were getting incorrect outputs most of the time and correct outputs sometimes. The code is there in the ‘Hit & Miss (Various initial attempts)’ folder on GitHub. Here is an explanation for the error:
+Observed Issue:
+During testing, the model produces overly simplistic and contextually irrelevant one-word responses like "is" or "an." This indicates a failure to comprehend the input passage and question relationship, resulting in poor inference performance.
+Training Details:
+● The training process was carried out for two epochs:
+○ Epoch 1:
+Training Loss: 10.2399
+Validation Loss: 10.8357 (Model saved as validation loss
+improved)
+○ Epoch 2:
+Training Loss: 10.9672
+Validation Loss: 10.9326 (No improvement observed)
+● The loss values remain consistently high, suggesting underfitting and inadequate learning.
+Root Causes:
+1. Model Limitations:
+The model's architecture may lack sufficient complexity to effectively capture the relationships between the passage and Question.
+2. Dataset and Training Dynamics:
+○ Potentially insufficient or poorly formatted training data, leading to limited generalization capability.
+○ Two training epochs may not be sufficient for the model to Converge.
+3. Preprocessing and Tokenization:
+○ Inadequate tokenization or representation of inputs may cause the model to misinterpret context. It has limitations.
+4. Training Parameters:
+Suboptimal hyperparameters, such as learning rate or batch size, could be hindering model performance.
+5. CPU insufficiency:
+Due to cpu insufficiency and the bulk data, the whole data is not getting used in training the model and output is not as we expected.
+6. Overly Simplistic Decoding Strategy:
+Our chosen start and end tokens might not form a coherent span. They could even be the
+same token or unrelated tokens from different parts of the sequence. This often leads to
+truncated or meaningless answers.
+Proposed Solutions
+1. Data Enhancements:
+● Use a high-quality, diverse dataset containing well-labeled passage-question-answer triples. Consider public datasets like SQuAD for additional training examples.
+● Preprocess data effectively by ensuring proper passage-question concatenation and the inclusion of special tokens (e.g., [CLS],[SEP]) when using transformer models.
+2. Model Improvements:
+● Transition to transformer-based models such as BERT, T5, or GPT, which are pre-trained on large text corpora and designed for tasks like question answering.
+● Fine-tune these models on your dataset to improve contextual understanding and generalization.
+3. Training Strategies:
+● Increase the number of epochs to allow sufficient learning. Use early stopping to prevent overfitting.
+● Optimize hyperparameters, such as learning rate, using grid search or Bayesian optimization.
+● Experiment with sequence-based loss functions, which better align with the QA task.
+4. Evaluation and Debugging:
+● Analyze validation predictions to pinpoint patterns in failures (e.g., repeated single-word answers).
+● Employ metrics like Exact Match (EM) and F1 score to quantitatively evaluate performance.
+5. Pre-trained Models as Baselines:
+Leverage pre-trained models fine-tuned on similar tasks as a baseline for your project. This will provide a strong starting point and enable quicker convergence.
+Next Steps:
+1. Debug and verify the preprocessing pipeline to ensure tokenization and input formatting are correct.
+2. Implement and train a transformer-based model, evaluating results on the validation dataset.
+3. Iteratively refine the model by tweaking architecture and training parameters based on observed performance. By addressing these issues and following the proposed solutions, we
+aim to significantly improve the model's ability to generate meaningful answers from the given passage and question.
